@@ -12,9 +12,9 @@ Details of the target machine:
 - Dell Inspiron 7586 2 in 1
 - BIOS 1.7.1
 - 8th Generation Intel(R) Core(TM) i7-8565U Processor (8MB Cache, up to 4.6 GHz)
-- Intel UHD 620 (device id 0x3EA0, BIOS Device name _SB_.PCI0.GFX0
+- Intel UHD 620 (device id 0x3EA0, BIOS Device name `_SB_.PCI0.GFX0`
 - Intel Wireless 9560
-- NVIDIA GeForce MX150 2GB GDDR5 (not needed or either supported in macOS, will be disabled) BIOS Device name _SB__.PCI0.RP05.PEGP
+- NVIDIA GeForce MX150 2GB GDDR5 (not needed or either supported in macOS, will be disabled) BIOS Device name `_SB__.PCI0.RP05.PEGP`
 - 512GB M.2 PCIe NVMe Solid State Drive
 - 15.6-inch UHD (3840 x 2160) 4K Touch Screen
 - Fingerprint sensor (not supported)

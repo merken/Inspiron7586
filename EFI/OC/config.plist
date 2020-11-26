@@ -10,15 +10,71 @@
 				<key>Comment</key>
 				<string>SSDT-AWAC.aml</string>
 				<key>Path</key>
-				<string>SSDT-AWAC.aml</string>
+				<string>backup/SSDT-AWAC.aml</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>SSDT-EC-LAPTOP.aml</string>
 				<key>Path</key>
-				<string>SSDT-EC-LAPTOP.aml</string>
+				<string>backup/SSDT-EC-LAPTOP.aml</string>
+				<key>Enabled</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-EC-USBX-LAPTOP.aml</string>
+				<key>Path</key>
+				<string>backup/SSDT-EC-USBX-LAPTOP.aml</string>
+				<key>Enabled</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-GPI0.aml</string>
+				<key>Path</key>
+				<string>backup/SSDT-GPI0.aml</string>
+				<key>Enabled</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-NVIDIA.aml</string>
+				<key>Path</key>
+				<string>backup/SSDT-NVIDIA.aml</string>
+				<key>Enabled</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-PLUG-DRTNIA.aml</string>
+				<key>Path</key>
+				<string>backup/SSDT-PLUG-DRTNIA.aml</string>
+				<key>Enabled</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-PNLF-CFL.aml</string>
+				<key>Path</key>
+				<string>backup/SSDT-PNLF-CFL.aml</string>
+				<key>Enabled</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-XOSI.aml</string>
+				<key>Path</key>
+				<string>backup/SSDT-XOSI.aml</string>
+				<key>Enabled</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-dGPU-Off.aml</string>
+				<key>Path</key>
+				<string>SSDT-dGPU-Off.aml</string>
 				<key>Enabled</key>
 				<true/>
 			</dict>
@@ -32,19 +88,19 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-GPI0.aml</string>
+				<string>SSDT-EC.aml</string>
 				<key>Path</key>
-				<string>SSDT-GPI0.aml</string>
+				<string>SSDT-EC.aml</string>
 				<key>Enabled</key>
 				<true/>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-NVIDIA.aml</string>
+				<string>SSDT-HPET.aml</string>
 				<key>Path</key>
-				<string>SSDT-NVIDIA.aml</string>
+				<string>SSDT-HPET.aml</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -56,19 +112,19 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-PNLF-CFL.aml</string>
+				<string>SSDT-PLUG.aml</string>
 				<key>Path</key>
-				<string>SSDT-PNLF-CFL.aml</string>
+				<string>SSDT-PLUG.aml</string>
 				<key>Enabled</key>
 				<true/>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-XOSI.aml</string>
+				<string>SSDT-PNLF-CFL.aml</string>
 				<key>Path</key>
-				<string>SSDT-XOSI.aml</string>
+				<string>SSDT-PNLF-CFL.aml</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 			</dict>
 		</array>
 		<key>Delete</key>
@@ -212,7 +268,7 @@
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>oAqTU1RBUwE=</data>
 				<key>Limit</key>
@@ -334,11 +390,11 @@
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
-				<data>AACbPg==</data>
+				<data>00009B3E</data>
 				<key>AAPL,slot-name</key>
 				<string>Internal@0,2,0</string>
 				<key>device-id</key>
-				<data>mz4AAA==</data>
+				<data>9B3E0000</data>
 				<key>device_type</key>
 				<string>Device Controller</string>
 				<key>disable-external-gpu</key>
@@ -360,7 +416,7 @@
 				<key>framebuffer-con1-type</key>
 				<data>AAgAAA==</data>
 				<key>framebuffer-patch-enable</key>
-				<data>AQAAAA==</data>
+				<integer>1</integer>
 				<key>framebuffer-unifiedmem</key>
 				<data>AAAAgA==</data>
 				<key>hda-gfx</key>
@@ -368,9 +424,9 @@
 				<key>model</key>
 				<string>Intel UHD Graphics 620</string>
 				<key>framebuffer-fbmem</key>
-				<data>AACQAA==</data>
+				<data>00009000</data>
 				<key>framebuffer-stolenmem</key>
-				<data>AAAwAQ==</data>
+				<data>00003001</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -384,13 +440,13 @@
 				<key>Comment</key>
 				<string></string>
 				<key>MaxKernel</key>
-				<string></string>
+				<string>20.99.99</string>
 				<key>Enabled</key>
 				<true/>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 				<key>MinKernel</key>
-				<string></string>
+				<string>20.0.0</string>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/Lilu</string>
 				<key>Arch</key>
@@ -874,7 +930,7 @@
 			<key>AppleCpuPmCfgLock</key>
 			<false/>
 			<key>AppleXcpmCfgLock</key>
-			<false/>
+			<true/>
 			<key>AppleXcpmExtraMsrs</key>
 			<false/>
 			<key>AppleXcpmForceBoost</key>
@@ -1018,44 +1074,56 @@
 			<dict>
 				<key>Comment</key>
 				<string>CleanNvram.efi</string>
-				<key>Auxiliary</key>
-				<true/>
+				<key>RealPath</key>
+				<false/>
+				<key>Name</key>
+				<string>CleanNvram.efi</string>
+				<key>TextMode</key>
+				<false/>
 				<key>Enabled</key>
 				<true/>
 				<key>Arguments</key>
 				<string></string>
 				<key>Path</key>
 				<string>CleanNvram.efi</string>
-				<key>Name</key>
-				<string>CleanNvram.efi</string>
+				<key>Auxiliary</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>modGRUBShell.efi</string>
-				<key>Auxiliary</key>
-				<true/>
+				<key>RealPath</key>
+				<false/>
+				<key>Name</key>
+				<string>modGRUBShell.efi</string>
+				<key>TextMode</key>
+				<false/>
 				<key>Enabled</key>
 				<true/>
 				<key>Arguments</key>
 				<string></string>
 				<key>Path</key>
 				<string>modGRUBShell.efi</string>
-				<key>Name</key>
-				<string>modGRUBShell.efi</string>
+				<key>Auxiliary</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>OpenShell.efi</string>
-				<key>Auxiliary</key>
-				<true/>
+				<key>RealPath</key>
+				<false/>
+				<key>Name</key>
+				<string>OpenShell.efi</string>
+				<key>TextMode</key>
+				<false/>
 				<key>Enabled</key>
 				<true/>
 				<key>Arguments</key>
 				<string></string>
 				<key>Path</key>
 				<string>OpenShell.efi</string>
-				<key>Name</key>
-				<string>OpenShell.efi</string>
+				<key>Auxiliary</key>
+				<true/>
 			</dict>
 		</array>
 	</dict>
@@ -1084,7 +1152,7 @@
 				<key>run-efi-updater</key>
 				<string>No</string>
 				<key>csr-active-config</key>
-				<data>AAAAAA==</data>
+				<data>00000000</data>
 				<key>prev-lang:kbd</key>
 				<string>&lt;&gt;</string>
 			</dict>

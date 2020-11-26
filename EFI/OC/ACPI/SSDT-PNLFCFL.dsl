@@ -4,9 +4,9 @@
 
 DefinitionBlock ("", "SSDT", 2, "ACDT", "PNLFCFL", 0x00000000)
 {
-    External (_SB_.PCI0.GPU0, DeviceObj)
+    External (_SB_.PCI0.GFX0, DeviceObj)
 
-    Device (_SB.PCI0.GPU0.PNLF)
+    Device (_SB.PCI0.GFX0.PNLF)
     {
      // Name (_ADR, Zero)  // _ADR: Address
         Name (_HID, EisaId ("APP0002"))  // _HID: Hardware ID

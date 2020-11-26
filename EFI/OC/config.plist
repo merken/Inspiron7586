@@ -8,105 +8,25 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-AWAC.aml</string>
+				<string>SSDT-dGPU-Off.aml</string>
 				<key>Path</key>
-				<string>backup/SSDT-AWAC.aml</string>
+				<string>SSDT-dGPU-Off.aml</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-EC-LAPTOP.aml</string>
+				<string>SSDT-EC.aml</string>
 				<key>Path</key>
-				<string>backup/SSDT-EC-LAPTOP.aml</string>
+				<string>SSDT-EC.aml</string>
 				<key>Enabled</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-EC-USBX-LAPTOP.aml</string>
-				<key>Path</key>
-				<string>backup/SSDT-EC-USBX-LAPTOP.aml</string>
-				<key>Enabled</key>
-				<false/>
+				<true/>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>SSDT-GPI0.aml</string>
 				<key>Path</key>
-				<string>backup/SSDT-GPI0.aml</string>
-				<key>Enabled</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-NVIDIA.aml</string>
-				<key>Path</key>
-				<string>backup/SSDT-NVIDIA.aml</string>
-				<key>Enabled</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-PLUG-DRTNIA.aml</string>
-				<key>Path</key>
-				<string>backup/SSDT-PLUG-DRTNIA.aml</string>
-				<key>Enabled</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-PNLF-CFL.aml</string>
-				<key>Path</key>
-				<string>backup/SSDT-PNLF-CFL.aml</string>
-				<key>Enabled</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-XOSI.aml</string>
-				<key>Path</key>
-				<string>backup/SSDT-XOSI.aml</string>
-				<key>Enabled</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-dGPU-Off.aml</string>
-				<key>Path</key>
-				<string>SSDT-dGPU-Off.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-EC-USBX-LAPTOP.aml</string>
-				<key>Path</key>
-				<string>SSDT-EC-USBX-LAPTOP.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-EC.aml</string>
-				<key>Path</key>
-				<string>SSDT-EC.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-HPET.aml</string>
-				<key>Path</key>
-				<string>SSDT-HPET.aml</string>
-				<key>Enabled</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-PLUG-DRTNIA.aml</string>
-				<key>Path</key>
-				<string>SSDT-PLUG-DRTNIA.aml</string>
+				<string>SSDT-GPI0.aml</string>
 				<key>Enabled</key>
 				<true/>
 			</dict>
@@ -120,9 +40,9 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-PNLF-CFL.aml</string>
+				<string>SSDT-PNLFCFL.aml</string>
 				<key>Path</key>
-				<string>SSDT-PNLF-CFL.aml</string>
+				<string>SSDT-PNLFCFL.aml</string>
 				<key>Enabled</key>
 				<true/>
 			</dict>
@@ -140,7 +60,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>5f4f5349</data>
+				<data>X09TSQ==</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
@@ -148,7 +68,7 @@
 				<key>OemTableId</key>
 				<data></data>
 				<key>Replace</key>
-				<data>584f5349</data>
+				<data>WE9TSQ==</data>
 				<key>ReplaceMask</key>
 				<data></data>
 				<key>Skip</key>
@@ -212,63 +132,11 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>change HDAS to HDEF</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<false/>
-				<key>Find</key>
-				<data>SERBUw==</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>OemTableId</key>
-				<data></data>
-				<key>Replace</key>
-				<data>SERFRg==</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data></data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>[USB] H_EC to EC</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<false/>
-				<key>Find</key>
-				<data>SF9FQw==</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>OemTableId</key>
-				<data></data>
-				<key>Replace</key>
-				<data>RUNfXw==</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data>RFNEVA==</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>Fix AsRock Z390 BIOS DSDT Device(RTC) bug</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>oAqTU1RBUwE=</data>
 				<key>Limit</key>
@@ -390,43 +258,25 @@
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
-				<data>00009B3E</data>
+				<data>CQClPg==</data>
 				<key>AAPL,slot-name</key>
 				<string>Internal@0,2,0</string>
 				<key>device-id</key>
-				<data>9B3E0000</data>
+				<data>pT4AAA==</data>
 				<key>device_type</key>
-				<string>Device Controller</string>
-				<key>disable-external-gpu</key>
-				<data>AQAAAA==</data>
+				<string>VGA compatible controller</string>
 				<key>enable-hdmi20</key>
-				<data>AAAAAA==</data>
-				<key>force-online</key>
 				<data>AQAAAA==</data>
-				<key>framebuffer-con1-busid</key>
+				<key>enable-lspcon-support</key>
 				<data>AQAAAA==</data>
-				<key>framebuffer-con1-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-con1-flags</key>
-				<data>IAAAAA==</data>
-				<key>framebuffer-con1-index</key>
-				<data>/////w==</data>
-				<key>framebuffer-con1-pipe</key>
-				<data>AAAAAA==</data>
-				<key>framebuffer-con1-type</key>
-				<data>AAgAAA==</data>
+				<key>framebuffer-fbmem</key>
+				<data>AACQAA==</data>
 				<key>framebuffer-patch-enable</key>
-				<integer>1</integer>
-				<key>framebuffer-unifiedmem</key>
-				<data>AAAAgA==</data>
-				<key>hda-gfx</key>
-				<string>onboard-1</string>
+				<data>AQAAAA==</data>
+				<key>framebuffer-stolenmem</key>
+				<data>AAAwAQ==</data>
 				<key>model</key>
 				<string>Intel UHD Graphics 620</string>
-				<key>framebuffer-fbmem</key>
-				<data>00009000</data>
-				<key>framebuffer-stolenmem</key>
-				<data>00003001</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -440,13 +290,13 @@
 				<key>Comment</key>
 				<string></string>
 				<key>MaxKernel</key>
-				<string>20.99.99</string>
+				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 				<key>MinKernel</key>
-				<string>20.0.0</string>
+				<string></string>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/Lilu</string>
 				<key>Arch</key>
@@ -930,7 +780,7 @@
 			<key>AppleCpuPmCfgLock</key>
 			<false/>
 			<key>AppleXcpmCfgLock</key>
-			<true/>
+			<false/>
 			<key>AppleXcpmExtraMsrs</key>
 			<false/>
 			<key>AppleXcpmForceBoost</key>
@@ -938,7 +788,7 @@
 			<key>CustomSMBIOSGuid</key>
 			<true/>
 			<key>DisableIoMapper</key>
-			<true/>
+			<false/>
 			<key>DisableLinkeditJettison</key>
 			<true/>
 			<key>DisableRtcChecksum</key>
@@ -1074,56 +924,58 @@
 			<dict>
 				<key>Comment</key>
 				<string>CleanNvram.efi</string>
-				<key>RealPath</key>
-				<false/>
-				<key>Name</key>
-				<string>CleanNvram.efi</string>
-				<key>TextMode</key>
-				<false/>
+				<key>Auxiliary</key>
+				<true/>
 				<key>Enabled</key>
 				<true/>
 				<key>Arguments</key>
 				<string></string>
 				<key>Path</key>
 				<string>CleanNvram.efi</string>
-				<key>Auxiliary</key>
-				<true/>
+				<key>Name</key>
+				<string>CleanNvram.efi</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>modGRUBShell.efi</string>
-				<key>RealPath</key>
-				<false/>
-				<key>Name</key>
-				<string>modGRUBShell.efi</string>
-				<key>TextMode</key>
-				<false/>
+				<key>Auxiliary</key>
+				<true/>
 				<key>Enabled</key>
 				<true/>
 				<key>Arguments</key>
 				<string></string>
 				<key>Path</key>
 				<string>modGRUBShell.efi</string>
+				<key>Name</key>
+				<string>modGRUBShell.efi</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>OpenControl.efi</string>
 				<key>Auxiliary</key>
 				<true/>
+				<key>Enabled</key>
+				<true/>
+				<key>Arguments</key>
+				<string></string>
+				<key>Path</key>
+				<string>OpenControl.efi</string>
+				<key>Name</key>
+				<string>OpenControl.efi</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>OpenShell.efi</string>
-				<key>RealPath</key>
-				<false/>
-				<key>Name</key>
-				<string>OpenShell.efi</string>
-				<key>TextMode</key>
-				<false/>
+				<key>Auxiliary</key>
+				<true/>
 				<key>Enabled</key>
 				<true/>
 				<key>Arguments</key>
 				<string></string>
 				<key>Path</key>
 				<string>OpenShell.efi</string>
-				<key>Auxiliary</key>
-				<true/>
+				<key>Name</key>
+				<string>OpenShell.efi</string>
 			</dict>
 		</array>
 	</dict>
@@ -1134,7 +986,7 @@
 			<key>4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14</key>
 			<dict>
 				<key>DefaultBackgroundColor</key>
-				<data>AAAAAA==</data>
+				<data>v7+/AA==</data>
 				<key>UIScale</key>
 				<data>AQ==</data>
 			</dict>
@@ -1152,27 +1004,13 @@
 				<key>run-efi-updater</key>
 				<string>No</string>
 				<key>csr-active-config</key>
-				<data>00000000</data>
+				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
 				<string>&lt;&gt;</string>
 			</dict>
 		</dict>
 		<key>Delete</key>
-		<dict>
-			<key>4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14</key>
-			<array>
-				<string>UIScale</string>
-				<string>DefaultBackgroundColor</string>
-			</array>
-			<key>4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102</key>
-			<array>
-				<string>rtc-blacklist</string>
-			</array>
-			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
-			<array>
-				<string>boot-args</string>
-			</array>
-		</dict>
+		<dict/>
 		<key>LegacyEnable</key>
 		<false/>
 		<key>LegacyOverwrite</key>
@@ -1217,21 +1055,21 @@
 			<key>AdviseWindows</key>
 			<false/>
 			<key>MLB</key>
-			<string></string>
+			<string>C02837200GUJH4R1M</string>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>SystemMemoryStatus</key>
 			<string>Auto</string>
 			<key>ROM</key>
-			<data></data>
+			<data>1bnasyoS</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemProductName</key>
 			<string>MacBookPro15,2</string>
 			<key>SystemSerialNumber</key>
-			<string></string>
+			<string>C02XD06NJHCC</string>
 			<key>SystemUUID</key>
-			<string></string>
+			<string>4EE6927B-1C9D-468F-BE30-4FE5325D7521</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -1283,6 +1121,7 @@
 			<string>HfsPlus.efi</string>
 			<string>OpenCanopy.efi</string>
 			<string>OpenRuntime.efi</string>
+			<string>Ps2KeyboardDxe.efi</string>
 		</array>
 		<key>Input</key>
 		<dict>
@@ -1393,26 +1232,26 @@
 			<dict>
 				<key>Address</key>
 				<integer>268435456</integer>
+				<key>Type</key>
+				<string>Reserved</string>
 				<key>Comment</key>
 				<string>HD3000: IGPU memory corruption errata</string>
 				<key>Enabled</key>
 				<false/>
 				<key>Size</key>
 				<integer>268435456</integer>
-				<key>Type</key>
-				<string>Reserved</string>
 			</dict>
 			<dict>
 				<key>Address</key>
 				<integer>569344</integer>
+				<key>Type</key>
+				<string>RuntimeCode</string>
 				<key>Comment</key>
 				<string>Fix black screen on wake from hibernation for Lenovo Thinkpad T490</string>
 				<key>Enabled</key>
 				<false/>
 				<key>Size</key>
 				<integer>4096</integer>
-				<key>Type</key>
-				<string>RuntimeCode</string>
 			</dict>
 		</array>
 	</dict>

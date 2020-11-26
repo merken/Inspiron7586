@@ -1,6 +1,7 @@
 # platform generated data via GenSMBIOS
-config.smbios.plist
+config.platforminfo.plist
 
 # DSDT file extracted on the target machine in Linux using SSDTTime
 DSDT.dsl
+DSDT.aml
 .DS_Store

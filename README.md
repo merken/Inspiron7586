@@ -2,7 +2,9 @@
 OpenCore configuration for the Dell Inspiron 7586 2 in 1
 
 # THIS REPO IS CURRENTLY NOT WORKING, IT IS WORK IN PROGRESS
-I will update the repo once I get an installer working, current status: stuck on verbose output, keeps looping **VirtualSMC** and **itlwm** messages
+I will update the repo once I get an installer working, current status: stuck on verbose output, keeps looping **VirtualSMC** and **itlwm** messages,
+ shows messages like:
+ (apple pacakge id) <Error> **Failed to bootstrap path: path **= /System/<path to package> **no such file or directory**
 
 # Details of this setup
 

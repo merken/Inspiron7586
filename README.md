@@ -4,6 +4,7 @@ OpenCore configuration for the Dell Inspiron 7586 2 in 1
 # What is working
 - Wifi, although disconnects from time to time
 - Graphics card U620 is detected in 4K
+- Touch Screen, yes!
 - Intel i7 8565U
 - 32 GB RAM
 - External USB 3.0 HDD
@@ -11,15 +12,19 @@ OpenCore configuration for the Dell Inspiron 7586 2 in 1
 - Battery info seems correct
 - Audio, via alpid 77, no headphone jack
 - USB C Dongle HDMI
+- Macs Fan Control
 
 # Not working
 - Bluetooth Logitech Mouse
 - Sleep, closing the lid, resuming...
 - HDMI Port in the chassis (this is linked to the MX150 dGPU)
+- Native DRM (only software accelerated, Netflix works in FireFox)
 
  <img src="img/systeminfo.png"/>
  <img src="img/display.png"/>
  <img src="img/ram.png"/>
+ <img src="img/geekbench-cpu.png"/>
+ <img src="img/geekbench-gpu.png"/>
 
 # Details of this setup
 

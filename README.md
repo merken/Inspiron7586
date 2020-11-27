@@ -6,6 +6,8 @@ I will update the repo once I get an installer working, current status: stuck on
  shows messages like:
  (apple pacakge id) <Error> **Failed to bootstrap path: path **= /System/<path to package> **no such file or directory**
 
+ <img src="status.gif"/>
+
 # Details of this setup
 
 OpenCore version is 0.6.3

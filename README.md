@@ -1,12 +1,19 @@
 # Dell Inspiron 7586 2 in 1 convertable laptop
 OpenCore configuration for the Dell Inspiron 7586 2 in 1
 
-# THIS REPO IS CURRENTLY NOT WORKING, IT IS WORK IN PROGRESS
-I will update the repo once I get an installer working, current status: stuck on verbose output, keeps looping **VirtualSMC** and **itlwm** messages,
- shows messages like:
- (apple pacakge id) <Error> **Failed to bootstrap path: path **= /System/<path to package> **no such file or directory**
+# What is working
+- Wifi, although disconnects from time to time
+- Graphics card U620 is detected in 4K
+- Intel i7 8565U
+- 32 GB RAM
 
- <img src="status.gif"/>
+# Not working
+- **Audio**
+- Sleep, closing the lid
+
+ <img src="img/systeminfo.png"/>
+ <img src="img/display.png"/>
+ <img src="img/ram.png"/>
 
 # Details of this setup
 

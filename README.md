@@ -12,9 +12,10 @@ Details of the target machine:
 - Dell Inspiron 7586 2 in 1
 - BIOS 1.7.1
 - 8th Generation Intel(R) Core(TM) i7-8565U Processor (8MB Cache, up to 4.6 GHz), BIOS Device name `_SB_.PR00`
-- Intel UHD 620 (device id 0x3EA0, BIOS Device name `_SB_.PCI0.GFX0`
-- Intel Wireless 9560
-- NVIDIA GeForce MX150 2GB GDDR5 (not needed or either supported in macOS, will be disabled) BIOS Device name `_SB__.PCI0.RP05.PEGP`
+- Intel UHD 620 (device id 0x3EA0, BIOS Device name `_SB_.PCI0.GFX0` (Whiskey Lake)
+- AudioCodec `ALC3254`
+- Intel Wireless 9560 `0x9Df0`
+- NVIDIA GeForce MX150 2GB GDDR5 (not needed or either supported in macOS, will be disabled) BIOS Device name `_SB__.PCI0.RP05.PEGP` `0x1D10 GP108M`
 - 512GB M.2 PCIe NVMe Solid State Drive
 - 15.6-inch UHD (3840 x 2160) 4K Touch Screen
 - Fingerprint sensor (not supported)
@@ -29,11 +30,17 @@ and
 
 https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=wr5v6&oscode=wt64a&productcode=inspiron-15-7586-2-in-1-laptop
 
-CFL LOCK is disabled by running the modGRUBShell.efi from the OpenCore menu and entering:
+Check CFL LOCK by running the modGRUBShell.efi from the OpenCore menu and entering:
+
+```setup_var 0x5C3```
+
+If that returns 0x01, it is locked.
+
+To disable CFL LOCK, run the modGRUBShell.efi from the OpenCore menu and enter:
 
 ```setup_var 0x5C3 0x00```
 
-This needs to be repeated after a new BIOS flash!
+*This needs to be repeated after a new BIOS flash!*
 
 CFL LOCK can be re-enabled by running the modGRUBShell.efi from the OpenCore menu and entering:
 
@@ -41,8 +48,10 @@ CFL LOCK can be re-enabled by running the modGRUBShell.efi from the OpenCore men
 
 ## Tips
 Please follow the Dortania Guide carefully
+
 Please use PropertTree for any modifications to your config.plist!
 
 ## Special thanks
 Hacker1024 (superl2) for his initial work:
+
 https://github.com/hacker1024/Dell-Inspiron-7586-Hackintosh

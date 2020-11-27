@@ -1,6 +1,11 @@
 # Dell Inspiron 7586 2 in 1 convertable laptop
 OpenCore configuration for the Dell Inspiron 7586 2 in 1
 
+# THIS REPO IS CURRENTLY NOT WORKING, IT IS WORK IN PROGRESS
+I will update the repo once I get an installer working, current status: stuck on verbose output, keeps looping **VirtualSMC** and **itlwm** messages
+
+# Details of this setup
+
 OpenCore version is 0.6.3
 
 Started from scratch using Dortania's Guide https://dortania.github.io/OpenCore-Install-Guide/

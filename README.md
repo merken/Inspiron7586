@@ -9,10 +9,10 @@ OpenCore configuration for the Dell Inspiron 7586 2 in 1
 - External USB 3.0 HDD
 - External USB Mouse
 - Battery info seems correct
+- Audio, via alpid 77, no headphone jack
 
 # Not working
 - Bluetooth, can select device but not connect
-- **Audio**
 - Sleep, closing the lid, resuming...
 
  <img src="img/systeminfo.png"/>
@@ -46,7 +46,7 @@ BIOS Information:
 - SATA Operation: **AHCI**
 - Drives: **only M.2 PCIe SSD-0 (512GB) is enabled**
 - SMART reporting: **OFF**
-- PPT Security, PTT: b
+- PPT Security, PTT: **OFF**
 - Secure Boot: **OFF**
 - Intel SGX: **Disabled**
 - Multi Core support: **All**

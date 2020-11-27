@@ -10,10 +10,12 @@ OpenCore configuration for the Dell Inspiron 7586 2 in 1
 - External USB Mouse
 - Battery info seems correct
 - Audio, via alpid 77, no headphone jack
+- USB C Dongle HDMI
 
 # Not working
-- Bluetooth, can select device but not connect
+- Bluetooth Logitech Mouse
 - Sleep, closing the lid, resuming...
+- HDMI Port in the chassis (this is linked to the MX150 dGPU)
 
  <img src="img/systeminfo.png"/>
  <img src="img/display.png"/>

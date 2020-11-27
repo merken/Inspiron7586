@@ -1086,24 +1086,7 @@
 		<false/>
 		<key>Generic</key>
 		<dict>
-			<key>AdviseWindows</key>
-			<false/>
-			<key>MLB</key>
-			<string>C02939100GUJP4F1H</string>
-			<key>ProcessorType</key>
-			<integer>0</integer>
-			<key>SystemMemoryStatus</key>
-			<string>Auto</string>
-			<key>ROM</key>
-			<data>1bnasyoS</data>
-			<key>SpoofVendor</key>
-			<true/>
-			<key>SystemProductName</key>
-			<string>MacBookPro15,1</string>
-			<key>SystemSerialNumber</key>
-			<string>C02ZGPYZKGYG</string>
-			<key>SystemUUID</key>
-			<string>30DED5D0-2978-4006-A91B-E575FE919DE9</string>
+		<!-- TODO -->
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>

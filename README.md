@@ -1,4 +1,4 @@
-# Dell Inspiron 7586 2 in 1 convertable laptop
+# Dell Inspiron 7586 2 in 1 convertable laptop running macOS Catalina 10.15.7
 OpenCore configuration for the Dell Inspiron 7586 2 in 1
 
 # What is working

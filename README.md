@@ -6,10 +6,14 @@ OpenCore configuration for the Dell Inspiron 7586 2 in 1
 - Graphics card U620 is detected in 4K
 - Intel i7 8565U
 - 32 GB RAM
+- External USB 3.0 HDD
+- External USB Mouse
+- Battery info seems correct
 
 # Not working
+- Bluetooth, can select device but not connect
 - **Audio**
-- Sleep, closing the lid
+- Sleep, closing the lid, resuming...
 
  <img src="img/systeminfo.png"/>
  <img src="img/display.png"/>
@@ -93,6 +97,8 @@ CFL LOCK can be re-enabled by running the modGRUBShell.efi from the OpenCore men
 ```setup_var 0x5C3 0x01```
 
 ## Tips
+Please regenerate your own SMBIOS Data!
+
 Please follow the Dortania Guide carefully
 
 Please use PropertTree for any modifications to your config.plist!

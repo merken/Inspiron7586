@@ -67,8 +67,9 @@ BIOS Information:
 - CFG Lock: Disabled via modGRUBShell.efi, unable to do so in BIOS
 
 Details of the config.plist:
-- Platform id: **19160000**
-- Device id: **3EA08086**
+- Platform id: **0900A53E**
+- Device id: **A53E0000**
+- Please check the entire PciRoot(0x0)/Pci(0x2,0x0) section for more info regarding the U620 on Whiskey Lake
 - The order of the kexts is very important, see : https://www.tonymacx86.com/threads/guide-hp-spectre-x360-13-ap0037tu-late-2018.295518/
 
 **CFG LOCK** disabled using Dortania's guide : https://dortania.github.io/OpenCore-Post-Install/misc/msr-lock.html#disabling-cfg-lock

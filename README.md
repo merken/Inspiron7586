@@ -16,7 +16,7 @@ OpenCore configuration for the Dell Inspiron 7586 2 in 1
 - Bluetooth speaker
 
 # Not working
-- Macs Fan Control readout, but the fans work (audible)
+- Macs Fan Control sensor readout, but the fans work
 - Bluetooth Logitech Mouse
 - Sleep, closing the lid, resuming...
 - HDMI Port in the chassis (this is linked to the MX150 dGPU)

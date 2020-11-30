@@ -2,8 +2,8 @@
 OpenCore configuration for the Dell Inspiron 7586 2 in 1
 
 # What is working
-- Wifi, although disconnects from time to time
-- Graphics card U620 is detected in 4K
+- Wifi
+- Graphics card U620
 - Touch Screen, yes!
 - Intel i7 8565U
 - 32 GB RAM
@@ -11,20 +11,24 @@ OpenCore configuration for the Dell Inspiron 7586 2 in 1
 - External USB Mouse
 - Battery info seems correct
 - Audio, via alpid 77, no headphone jack
-- USB C Dongle HDMI
-- Macs Fan Control
+- USB C Dongle `DELL DA300HDMI`: HDMI, USB3 and RJ45 Ethernet
+- Bluetooth headset (Mic does not work)
+- Bluetooth speaker
 
 # Not working
+- Macs Fan Control readout, but the fans work (audible)
 - Bluetooth Logitech Mouse
 - Sleep, closing the lid, resuming...
 - HDMI Port in the chassis (this is linked to the MX150 dGPU)
-- Native DRM (only software accelerated, Netflix works in FireFox)
+- Native DRM (only software accelerated, **Netflix works in FireFox**)
 
- <img src="img/systeminfo.png"/>
- <img src="img/display.png"/>
- <img src="img/ram.png"/>
- <img src="img/geekbench-cpu.png"/>
- <img src="img/geekbench-gpu.png"/>
+ <img src="img/proof1.jpeg" width="450"/>
+ <img src="img/proof2.jpeg" width="450"/>
+ <img src="img/systeminfo.jpeg" width="450"/>
+ <img src="img/display.png" width="450"/>
+ <img src="img/ram.png" width="450"/>
+ <img src="img/geekbench-cpu.png" width="450"/>
+ <img src="img/geekbench-gpu.png" width="450"/>
 
 # Details of this setup
 
@@ -33,20 +37,23 @@ OpenCore version is 0.6.3
 Started from scratch using Dortania's Guide https://dortania.github.io/OpenCore-Install-Guide/
 
 PlatformInfo was generated using Dortania's Guide https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake.html#platforminfo
-**This is missing in the config.plist** Please generate your own.
+**This is missing in the config.plist** 
+
+Please generate your own using GenSMBIOS: https://github.com/corpnewt/GenSMBIOS
+Use `MacBookPro15,2`
 
 Details of the target machine:
 - Dell Inspiron 7586 2 in 1
-- BIOS 1.7.1
-- 8th Generation Intel(R) Core(TM) i7-8565U Processor (8MB Cache, up to 4.6 GHz), BIOS Device name `_SB_.PR00` Processor ID from BIOS `806EB`
-- Intel UHD 620 (device id 0x3EA0, BIOS Device name `_SB_.PCI0.GFX0` (Whiskey Lake)
+- BIOS `1.7.1`
+- 8th Generation Intel(R) Core(TM) `i7-8565U` Processor (8MB Cache, up to 4.6 GHz), BIOS Device name `_SB_.PR00` Processor ID from BIOS `806EB`
+- Intel UHD 620 (device id `0x3EA0`, BIOS Device name `_SB_.PCI0.GFX0` (Whiskey Lake)
 - AudioCodec `ALC3254`
 - Intel Wireless 9560 `0x9Df0`
 - NVIDIA GeForce MX150 2GB GDDR5 (not needed or either supported in macOS, will be disabled) BIOS Device name `_SB__.PCI0.RP05.PEGP` `0x1D10 GP108M`
 - 512GB M.2 PCIe NVMe Solid State Drive
-- 15.6-inch UHD (3840 x 2160) 4K Touch Screen
+- 15.6-inch UHD (3840 x 2160) 4K `Touch Screen`
 - Fingerprint sensor (not supported)
-- Originally had 16GBx1, DDR4, 2666MHz, **replaced with 2x Crucial 16 GB SODIMM DDR4-2400**
+- Originally had 16GBx1, DDR4, 2666MHz, **replaced with 2x Crucial 16 GB SODIMM DDR4-2400** https://www.crucial.com/memory/ddr4/ct16g4sfd824a
 
 BIOS Information:
 - Enable Legacy Option ROMs: **OFF**
@@ -71,9 +78,9 @@ BIOS Information:
 - VT for Direct I/O: **Disabled**
 - Wireless and Bluetooth: **ON**
 - Auto OS Recovery Threshold: **OFF**
-- CFG Lock: Disabled via modGRUBShell.efi, unable to do so in BIOS
+- CFG Lock: Disabled via `modGRUBShell.efi`, unable to do so in BIOS
 
-Details of the config.plist:
+Details of the config.plist in ProperTree:
 - Platform id: **0900A53E**
 - Device id: **A53E0000**
 - Please check the entire PciRoot(0x0)/Pci(0x2,0x0) section for more info regarding the U620 on Whiskey Lake
@@ -81,9 +88,11 @@ Details of the config.plist:
 
 **CFG LOCK** disabled using Dortania's guide : https://dortania.github.io/OpenCore-Post-Install/misc/msr-lock.html#disabling-cfg-lock
 BIOS 1.7.1 and 1.8.0 should all have the same entry for the CFG Lock **0x5C3**
+
 Extracted from 
 
 https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=9vv9w&oscode=wt64a&productcode=inspiron-15-7586-2-in-1-laptop
+
 and 
 
 https://www.dell.com/support/home/en-us/drivers/driversdetails?driverid=wr5v6&oscode=wt64a&productcode=inspiron-15-7586-2-in-1-laptop
@@ -109,7 +118,7 @@ Please regenerate your own SMBIOS Data!
 
 Please follow the Dortania Guide carefully
 
-Please use PropertTree for any modifications to your config.plist!
+Please use **ProperTree** for any modifications to your config.plist!
 
 ## Special thanks
 Hacker1024 (superl2) for his initial work:

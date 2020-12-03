@@ -115,6 +115,10 @@ CFL LOCK can be re-enabled by running the modGRUBShell.efi from the OpenCore men
 ```setup_var 0x5C3 0x01```
 
 ## Tips
+The Display does not come on for minutes after the verbose output, this is normal, you could connect an external display via an USB C Dongle (HDMI on the chassis does not work). Or just wait a few minutes.
+
+Turn the sleep off, on battery and power, this setup does not resume from sleep.
+
 Great for home use, not for professional environments, it is after all still a **HACK**intosh
 
 Please regenerate your own SMBIOS Data!

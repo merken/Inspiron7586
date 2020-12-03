@@ -1240,7 +1240,7 @@
 			<key>AdviseWindows</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02911501CDJH4RJA</string>
+			<string>TODO</string>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>SystemMemoryStatus</key>
@@ -1252,9 +1252,9 @@
 			<key>SystemProductName</key>
 			<string>MacBookPro15,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02YF1ZNJHCC</string>
+			<string>TODO</string>
 			<key>SystemUUID</key>
-			<string>14B7B869-86A1-4715-A7CB-72E56DF69EDE</string>
+			<string>TODO</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>

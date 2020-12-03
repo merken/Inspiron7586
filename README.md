@@ -116,9 +116,10 @@ CFL LOCK can be re-enabled by running the modGRUBShell.efi from the OpenCore men
 
 # Getting started
 - Copy this repo (git clone)
-- Format an USB drive using the Dortania Guide (3.0 works)
-- Create a macOS installation USB drive using the Dortania Guide
-- Mount the EFI partition (using MountEFI)
+- Generate your own platforminfo using [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) and the [Dortania Guide](https://dortania.github.io/OpenCore-Install-Guide/config.plist/#creating-your-config-plist) use `MacBookPro15,2` for `SystemProductName`. see the TODO in the config.plist.
+- Format an USB drive using the [Dortania Guide](https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html#prerequisites) (3.0 works)
+- Create a macOS installation USB drive using the [Dortania Guide](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/) and [gibMacOS](https://github.com/corpnewt/gibMacOS)
+- Mount the EFI partition (using [MountEFI](https://github.com/corpnewt/MountEFI))
 - Copy the OpenCore DEBUG files into the /Volumes/EFI/EFI directory, see Dortania Guide
 - Setup your BIOS (see BIOS Information above, press F2 on boot)
 - Boot via USB (press F12 on boot and select the USB drive)
@@ -126,7 +127,7 @@ CFL LOCK can be re-enabled by running the modGRUBShell.efi from the OpenCore men
 - If the drive still does not show up, check the folder structure, there should be an EFI folder on your EFI partition that contains OC and BOOT directories
 - Once you're booted into OpenCore, select the modGRUBShell.efi file
 - Type ```setup_var 0x5C3``` this should return 0x01
-- If it does not, your system is different from this setup and you must follow the Dortania Guide to find out the parameter for your CFG LOCK! Do not proceed with this tutorial
+- If it does not, your system is different from this setup and you must follow the [Dortania Guide](https://dortania.github.io/OpenCore-Post-Install/misc/msr-lock.html) to find out the parameter for your CFG LOCK! Do not proceed with this tutorial
 - Now set the 0x5C3 parameter (CFG LOCK) to 0x00 ```setup_var 0x5C3 0x00```
 - Check if it has been persisted type ```setup_var 0x5C3```, this should return 0x00
 - Reboot on USB (F12) and select the macOS Catalina installer

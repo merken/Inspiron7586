@@ -16,6 +16,7 @@ OpenCore configuration for the Dell Inspiron 7586 2 in 1
 - Bluetooth speaker
 
 # Not working
+- Wifi networks that require additional credentials (prompt for login does not appear), also the connection is unstable on these Wifi networks, network card resets and re-connection is required
 - Macs Fan Control sensor readout, but the fans work
 - Bluetooth Logitech Mouse
 - Sleep, closing the lid, resuming...
@@ -44,7 +45,7 @@ Use `MacBookPro15,2`
 
 Details of the target machine:
 - Dell Inspiron 7586 2 in 1
-- BIOS `1.7.1`
+- BIOS `1.7.1`, upgraded to `1.8.0`
 - 8th Generation Intel(R) Core(TM) `i7-8565U` Processor (8MB Cache, up to 4.6 GHz), BIOS Device name `_SB_.PR00` Processor ID from BIOS `806EB`
 - Intel UHD 620 (device id `0x3EA0`, BIOS Device name `_SB_.PCI0.GFX0` (Whiskey Lake)
 - AudioCodec `ALC3254`
@@ -81,8 +82,8 @@ BIOS Information:
 - CFG Lock: Disabled via `modGRUBShell.efi`, unable to do so in BIOS
 
 Details of the config.plist in ProperTree:
-- Platform id: **0900A53E**
-- Device id: **A53E0000**
+- Platform id: **00009B3E**
+- Device id: **9B3E0000**
 - Please check the entire PciRoot(0x0)/Pci(0x2,0x0) section for more info regarding the U620 on Whiskey Lake
 - The order of the kexts is very important, see : https://www.tonymacx86.com/threads/guide-hp-spectre-x360-13-ap0037tu-late-2018.295518/
 
@@ -114,9 +115,11 @@ CFL LOCK can be re-enabled by running the modGRUBShell.efi from the OpenCore men
 ```setup_var 0x5C3 0x01```
 
 ## Tips
+Great for home use, not for professional environments, it is after all still a **HACK**intosh
+
 Please regenerate your own SMBIOS Data!
 
-Please follow the Dortania Guide carefully
+Please follow the Dortania Guide carefully.
 
 Please use **ProperTree** for any modifications to your config.plist!
 

@@ -114,6 +114,25 @@ CFL LOCK can be re-enabled by running the modGRUBShell.efi from the OpenCore men
 
 ```setup_var 0x5C3 0x01```
 
+# Getting started
+- Copy this repo (git clone)
+- Format an USB drive using the Dortania Guide (3.0 works)
+- Create a macOS installation USB drive using the Dortania Guide
+- Mount the EFI partition (using MountEFI)
+- Copy the OpenCore DEBUG files into the /Volumes/EFI/EFI directory, see Dortania Guide
+- Setup your BIOS (see BIOS Information above, press F2 on boot)
+- Boot via USB (press F12 on boot and select the USB drive)
+- If the drive does not show up, unplug, replug and reboot (CTRL+ALT+DEL on BIOS screen)
+- If the drive still does not show up, check the folder structure, there should be an EFI folder on your EFI partition that contains OC and BOOT directories
+- Once you're booted into OpenCore, select the modGRUBShell.efi file
+- Type ```setup_var 0x5C3``` this should return 0x01
+- If it does not, your system is different from this setup and you must follow the Dortania Guide to find out the parameter for your CFG LOCK! Do not proceed with this tutorial
+- Now set the 0x5C3 parameter (CFG LOCK) to 0x00 ```setup_var 0x5C3 0x00```
+- Check if it has been persisted type ```setup_var 0x5C3```, this should return 0x00
+- Reboot on USB (F12) and select the macOS Catalina installer
+- If your screen goes dark after the verbose text output, just wait a few minutes for the screen to turn back on
+- Good luck!
+
 ## Tips
 The Display does not come on for minutes after the verbose output, this is normal, you could connect an external display via an USB C Dongle (HDMI on the chassis does not work). Or just wait a few minutes.
 

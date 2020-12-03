@@ -16,6 +16,7 @@ OpenCore configuration for the Dell Inspiron 7586 2 in 1
 - Bluetooth speaker
 
 # Not working
+- Wifi networks that require additional credentials (prompt for login does not appear), also the connection is unstable on these Wifi networks, network card resets and re-connection is required
 - Macs Fan Control sensor readout, but the fans work
 - Bluetooth Logitech Mouse
 - Sleep, closing the lid, resuming...
@@ -44,7 +45,7 @@ Use `MacBookPro15,2`
 
 Details of the target machine:
 - Dell Inspiron 7586 2 in 1
-- BIOS `1.7.1`
+- BIOS `1.7.1`, upgraded to `1.8.0`
 - 8th Generation Intel(R) Core(TM) `i7-8565U` Processor (8MB Cache, up to 4.6 GHz), BIOS Device name `_SB_.PR00` Processor ID from BIOS `806EB`
 - Intel UHD 620 (device id `0x3EA0`, BIOS Device name `_SB_.PCI0.GFX0` (Whiskey Lake)
 - AudioCodec `ALC3254`
@@ -81,8 +82,8 @@ BIOS Information:
 - CFG Lock: Disabled via `modGRUBShell.efi`, unable to do so in BIOS
 
 Details of the config.plist in ProperTree:
-- Platform id: **0900A53E**
-- Device id: **A53E0000**
+- Platform id: **00009B3E**
+- Device id: **9B3E0000**
 - Please check the entire PciRoot(0x0)/Pci(0x2,0x0) section for more info regarding the U620 on Whiskey Lake
 - The order of the kexts is very important, see : https://www.tonymacx86.com/threads/guide-hp-spectre-x360-13-ap0037tu-late-2018.295518/
 
@@ -113,10 +114,36 @@ CFL LOCK can be re-enabled by running the modGRUBShell.efi from the OpenCore men
 
 ```setup_var 0x5C3 0x01```
 
+# Getting started
+- Copy this repo (git clone)
+- Generate your own platforminfo using [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) and the [Dortania Guide](https://dortania.github.io/OpenCore-Install-Guide/config.plist/#creating-your-config-plist) use `MacBookPro15,2` for `SystemProductName`. see the TODO in the config.plist.
+- Format an USB drive using the [Dortania Guide](https://dortania.github.io/OpenCore-Install-Guide/prerequisites.html#prerequisites) (3.0 works)
+- Create a macOS installation USB drive using the [Dortania Guide](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/) and [gibMacOS](https://github.com/corpnewt/gibMacOS)
+- Mount the EFI partition (using [MountEFI](https://github.com/corpnewt/MountEFI))
+- Copy the OpenCore DEBUG files into the /Volumes/EFI/EFI directory, see Dortania Guide
+- Setup your BIOS (see BIOS Information above, press F2 on boot)
+- Boot via USB (press F12 on boot and select the USB drive)
+- If the drive does not show up, unplug, replug and reboot (CTRL+ALT+DEL on BIOS screen)
+- If the drive still does not show up, check the folder structure, there should be an EFI folder on your EFI partition that contains OC and BOOT directories
+- Once you're booted into OpenCore, select the modGRUBShell.efi file
+- Type ```setup_var 0x5C3``` this should return 0x01
+- If it does not, your system is different from this setup and you must follow the [Dortania Guide](https://dortania.github.io/OpenCore-Post-Install/misc/msr-lock.html) to find out the parameter for your CFG LOCK! Do not proceed with this tutorial
+- Now set the 0x5C3 parameter (CFG LOCK) to 0x00 ```setup_var 0x5C3 0x00```
+- Check if it has been persisted type ```setup_var 0x5C3```, this should return 0x00
+- Reboot on USB (F12) and select the macOS Catalina installer
+- If your screen goes dark after the verbose text output, just wait a few minutes for the screen to turn back on
+- Good luck!
+
 ## Tips
+The Display does not come on for minutes after the verbose output, this is normal, you could connect an external display via an USB C Dongle (HDMI on the chassis does not work). Or just wait a few minutes.
+
+Turn the sleep off, on battery and power, this setup does not resume from sleep.
+
+Great for home use, not for professional environments, it is after all still a **HACK**intosh
+
 Please regenerate your own SMBIOS Data!
 
-Please follow the Dortania Guide carefully
+Please follow the Dortania Guide carefully.
 
 Please use **ProperTree** for any modifications to your config.plist!
 

@@ -90,7 +90,7 @@
 				<key>Mask</key>
 				<data></data>
 				<key>OemTableId</key>
-				<data></data>
+				<data>AAAAAA==</data>
 				<key>Replace</key>
 				<data>WE9TSQ==</data>
 				<key>ReplaceMask</key>
@@ -116,7 +116,7 @@
 				<key>Mask</key>
 				<data></data>
 				<key>OemTableId</key>
-				<data></data>
+				<data>AAAAAA==</data>
 				<key>Replace</key>
 				<data>SUdQVQ==</data>
 				<key>ReplaceMask</key>
@@ -142,7 +142,7 @@
 				<key>Mask</key>
 				<data></data>
 				<key>OemTableId</key>
-				<data></data>
+				<data>AAAAAA==</data>
 				<key>Replace</key>
 				<data>oAqRCv8L//8=</data>
 				<key>ReplaceMask</key>
@@ -168,7 +168,7 @@
 				<key>Mask</key>
 				<data></data>
 				<key>OemTableId</key>
-				<data></data>
+				<data>AAAAAA==</data>
 				<key>Replace</key>
 				<data>oExIAaOjow==</data>
 				<key>ReplaceMask</key>
@@ -194,7 +194,7 @@
 				<key>Mask</key>
 				<data></data>
 				<key>OemTableId</key>
-				<data></data>
+				<data>AAAAAA==</data>
 				<key>Replace</key>
 				<data>WFBSVwI=</data>
 				<key>ReplaceMask</key>
@@ -295,6 +295,8 @@
 				<true/>
 				<key>Comment</key>
 				<string>Black Screen Patch Vega 56/64, RX580 etc. (c)Pike R. Alpha</string>
+				<key>OemTableId</key>
+				<data>AAAAAA==</data>
 			</dict>
 		</array>
 		<key>Quirks</key>
@@ -1303,10 +1305,12 @@
 		<true/>
 		<key>Drivers</key>
 		<array>
+			<string>AudioDxe.efi</string>
 			<string>HfsPlus.efi</string>
 			<string>OpenCanopy.efi</string>
 			<string>OpenRuntime.efi</string>
 			<string>Ps2KeyboardDxe.efi</string>
+			<string>Ps2MouseDxe.efi</string>
 		</array>
 		<key>Input</key>
 		<dict>

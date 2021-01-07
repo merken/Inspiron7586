@@ -16,7 +16,7 @@ OpenCore configuration for the Dell Inspiron 7586 2 in 1
 - Bluetooth speaker
 
 # Not working
-- Wifi networks that require additional credentials (prompt for login does not appear), also the connection is unstable on these Wifi networks, network card resets and re-connection is required
+- Wifi networks that require additional credentials (prompt for login does not appear), also the connection is unstable on these Wifi networks, network card resets and re-connection is required, A workaround for this can be found below
 - Macs Fan Control sensor readout, but the fans work
 - Bluetooth Logitech Mouse
 - Sleep, closing the lid, resuming...
@@ -146,6 +146,19 @@ Please regenerate your own SMBIOS Data!
 Please follow the Dortania Guide carefully.
 
 Please use **ProperTree** for any modifications to your config.plist!
+
+### Workaround for WIFI networks that require additional login information
+Requirements:
+- Android smartphone, I have not tested this with an iPhone
+- Usb data cable
+
+In the rare occasion when the Intel Open Wireless driver does not want to prompt the login screen for your WiFi Access Point, you can use this workaround.
+
+1. Connect your Android smartphone to the Access Point.
+2. Install the HoRNDIS 9.2 package (for Catalina) from [here](/tools/HoRNDIS-9.2-catalina_install.pkg.zip)
+3. Connect your phone to your Hackintosh using a USB cable
+4. Share the phone's network using USB tethering
+5. Enjoy having your phone charging while having a stable WiFi on your Hackintosh
 
 ## Special thanks
 Hacker1024 (superl2) for his initial work:

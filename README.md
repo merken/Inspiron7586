@@ -12,12 +12,15 @@ OpenCore configuration for the Dell Inspiron 7586 2 in 1
 - Battery info seems correct
 - Audio, via alpid 77, no headphone jack
 - USB C Dongle `DELL DA300HDMI`: HDMI, USB3 and RJ45 Ethernet
-- Bluetooth headset (Mic does not work)
+- Bluetooth headset (Mic does not work, and probably never will)
 - Bluetooth speaker
+- SD Card Reader
 
 # Not working
 - Wifi networks that require additional credentials (prompt for login does not appear), also the connection is unstable on these Wifi networks, network card resets and re-connection is required, A workaround for this can be found below
 - Macs Fan Control sensor readout, but the fans work
+- TG PRO Fan control readout does not work, but the sensors work
+- Use Macs Fan Control for managing the fans, use TG Pro for the sensors
 - Bluetooth Logitech Mouse
 - Sleep, closing the lid, resuming...
 - HDMI Port in the chassis (this is linked to the MX150 dGPU)
@@ -33,7 +36,7 @@ OpenCore configuration for the Dell Inspiron 7586 2 in 1
 
 # Details of this setup
 
-OpenCore version is 0.6.3
+OpenCore version is 0.6.5
 
 Started from scratch using Dortania's Guide https://dortania.github.io/OpenCore-Install-Guide/
 
@@ -53,7 +56,7 @@ Details of the target machine:
 - NVIDIA GeForce MX150 2GB GDDR5 (not needed or either supported in macOS, will be disabled) BIOS Device name `_SB__.PCI0.RP05.PEGP` `0x1D10 GP108M`
 - 512GB M.2 PCIe NVMe Solid State Drive
 - 15.6-inch UHD (3840 x 2160) 4K `Touch Screen`
-- Fingerprint sensor (not supported)
+- Fingerprint sensor (discovered, but not supported)
 - Originally had 16GBx1, DDR4, 2666MHz, **replaced with 2x Crucial 16 GB SODIMM DDR4-2400** https://www.crucial.com/memory/ddr4/ct16g4sfd824a
 
 BIOS Information:
@@ -132,20 +135,21 @@ CFL LOCK can be re-enabled by running the modGRUBShell.efi from the OpenCore men
 - Check if it has been persisted type ```setup_var 0x5C3```, this should return 0x00
 - Reboot on USB (F12) and select the macOS Catalina installer
 - If your screen goes dark after the verbose text output, just wait a few minutes for the screen to turn back on
+- Install the HeliPort.app application after macOS installation, found [here](/tools/HoRNDIS-9.2-catalina_install.pkg.zip)
 - Good luck!
 
 ## Tips
-The Display does not come on for minutes after the verbose output, this is normal, you could connect an external display via an USB C Dongle (HDMI on the chassis does not work). Or just wait a few minutes.
+- The Display does not come on for minutes after the verbose output, this is normal, you could connect an external display via an USB C Dongle (HDMI on the chassis does not work). Or just wait a few minutes.
 
-Turn the sleep off, on battery and power, this setup does not resume from sleep.
+- Turn the sleep off, on battery and power, this setup does not resume from sleep.
 
-Great for home use, not for professional environments, it is after all still a **HACK**intosh
+- Great for home use, not for professional environments, it is after all still a **HACK**intosh
 
-Please regenerate your own SMBIOS Data!
+- Please regenerate your own SMBIOS Data!
 
-Please follow the Dortania Guide carefully.
+- Please follow the [Dortania Guide](https://dortania.github.io/OpenCore-Install-Guide/) carefully.
 
-Please use **ProperTree** for any modifications to your config.plist!
+- Please use **ProperTree** for any modifications to your config.plist!
 
 ### Workaround for WIFI networks that require additional login information
 Requirements:

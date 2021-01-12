@@ -33,6 +33,7 @@ OpenCore configuration for the Dell Inspiron 7586 2 in 1
  <img src="img/ram.png" width="450"/>
  <img src="img/geekbench-cpu.png" width="450"/>
  <img src="img/geekbench-gpu.png" width="450"/>
+ <img src="img/geekbench-metal.png" width="450"/>
 
 # Details of this setup
 

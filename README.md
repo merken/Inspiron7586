@@ -21,7 +21,7 @@ OpenCore configuration for the Dell Inspiron 7586 2 in 1
 - Macs Fan Control sensor readout, but the fans work
 - TG PRO Fan control readout does not work, but the sensors work
 - Use Macs Fan Control for managing the fans, use TG Pro for the sensors
-- Bluetooth Logitech Mouse
+- Bluetooth Logitech Mouse. However, the Bluetooth Microsoft Mouse works...
 - Sleep, closing the lid, resuming...
 - HDMI Port in the chassis (this is linked to the MX150 dGPU)
 - Native DRM (only software accelerated, **Netflix works in FireFox**)

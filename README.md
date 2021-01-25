@@ -136,7 +136,7 @@ CFL LOCK can be re-enabled by running the modGRUBShell.efi from the OpenCore men
 - Check if it has been persisted type ```setup_var 0x5C3```, this should return 0x00
 - Reboot on USB (F12) and select the macOS Catalina installer
 - If your screen goes dark after the verbose text output, just wait a few minutes for the screen to turn back on
-- Install the HeliPort.app application after macOS installation, found [here](/tools/HoRNDIS-9.2-catalina_install.pkg.zip)
+- Install the HeliPort.app application after macOS installation, found [here](/tools/HeliPort.dmg)
 - Good luck!
 
 ## Tips

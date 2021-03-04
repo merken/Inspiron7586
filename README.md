@@ -1,4 +1,4 @@
-# Dell Inspiron 7586 2 in 1 convertable laptop running macOS Catalina 10.15.7
+# Dell Inspiron 7586 2 in 1 convertable laptop running macOS Big Sur 11.2.2
 OpenCore configuration for the Dell Inspiron 7586 2 in 1
 
 # What is working
@@ -37,7 +37,7 @@ OpenCore configuration for the Dell Inspiron 7586 2 in 1
 
 # Details of this setup
 
-OpenCore version is 0.6.5
+OpenCore version is 0.6.6
 
 Started from scratch using Dortania's Guide https://dortania.github.io/OpenCore-Install-Guide/
 

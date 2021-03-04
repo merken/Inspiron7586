@@ -28,7 +28,7 @@ OpenCore configuration for the Dell Inspiron 7586 2 in 1
 
  <img src="img/proof1.jpeg" width="450"/>
  <img src="img/proof2.jpeg" width="450"/>
- <img src="img/systeminfo.jpeg" width="450"/>
+ <img src="img/systeminfo.png" width="450"/>
  <img src="img/display.png" width="450"/>
  <img src="img/ram.png" width="450"/>
  <img src="img/geekbench-cpu.png" width="450"/>
